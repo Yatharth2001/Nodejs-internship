@@ -1,0 +1,13 @@
+form{
+   border: 2px solid black;
+   text-align: center;
+   height: 300px;
+   width: 400px;
+   padding: 20px;
+   margin-left: 490px;
+   margin-top: 130px;
+   border: blue;
+}   
+p{
+    text-align: center;
+}

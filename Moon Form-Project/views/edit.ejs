@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h1>Edit Record</h1>
+        <a href="/display">Display</a>
+        <form method="POST">
+            Email id: <input type="text" name="txt1" value=<%= db_rows_array[0].Email_id %> required>
+            Password: <input type="text" name="txt2" value=<%= db_rows_array[0].Password %> required>
+          
+            <input type="Submit"/>
+        </form>
+    </body>
+</html>

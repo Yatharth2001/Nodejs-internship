@@ -1,0 +1,34 @@
+
+<% if(db_rows_array.length > 0){ %>
+    <style>
+        td{
+            font-size: 30px;
+
+        }
+        th{
+            font-size: 30px;
+        }
+    </style>
+    <table border="6px solid blue">
+        <tr>
+            <th>id</th>
+            <th>Email_id</th>
+            <th>Password</th>
+            <th>Action</th>
+        </tr>
+        <% for(var i=0;i<db_rows_array.length;i++){ %>
+            <tr>
+            <td><%= db_rows_array[i].id %></td>
+            <td><%= db_rows_array[i].Email_id%></td>
+            <td><%= db_rows_array[i].Password %></td>
+            <td> <a href='/edit/<%= db_rows_array[i].id %>'>Edit</a>| <a href='/delete/<%= db_rows_array[i].id %>'>Delete</a>  </td>
+
+        </tr>
+
+            <%}%>
+    </table>
+
+    <% }else{ %>
+        No Records Found
+        <% } %> 
+        <a href="/add">Add Record</a>
